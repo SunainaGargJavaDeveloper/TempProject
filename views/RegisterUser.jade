@@ -1,0 +1,21 @@
+body
+h1 Register JobSeeker
+form(action="/register", method="post")
+    div.input
+        span.label FirstName
+        input(type="text", name="firstName" required) 
+    div.input
+        span.label LastName
+        input(type="text", name="lastName" required)  
+    div.input
+        span.label Email
+        input(type="email", name="eMail" required)  
+    div.input
+        span.label Password
+        input(type="password", name="passwd" required)  
+    div.input
+        span.label Confirm password
+        input(type="password", name="confPassword" required)  
+    div.actions
+        input(type="submit", value="Save")
+    

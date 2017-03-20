@@ -1,0 +1,13 @@
+body
+h1 SignIn JobSeeker
+form(action="/login", method="post")
+    
+    div.input
+        span.label Enter Email
+        input(type="email", name="eMail" required)  
+    div.input
+        span.label Password
+        input(type="password", name="passwd" required)  
+    
+    div.actions
+        input(type="submit", value="Save")

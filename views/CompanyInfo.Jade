@@ -1,0 +1,19 @@
+body
+h1 Register JobSeeker
+form(action="/addCompany", method="post")
+    div.input
+        span.label companyName
+        input(type="text", name="companyName" required) 
+    div.input
+        span.label companyCountry
+        input(type="text", name="companyCountry" required)  
+    div.input
+        span.label companyAddress
+        input(type="text", name="companyAddress" required)  
+    div.input
+        span.label companySummary
+        input(type="textarea", name="companySummary" required)  
+    
+    div.actions
+        input(type="submit", value="Save")
+    

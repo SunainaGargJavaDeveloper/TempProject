@@ -1,0 +1,12 @@
+doctype html  
+html(lang="en")  
+  head
+    title JobBoard
+  body
+    h1 JobBoard
+    hr
+    a(href="/") Home
+    if(type=="error")
+            h3(style="color:red") #{message}
+        else
+            h3 New company companyName: #{company.companyName}, countryName: #{company.companyCountry}  added!
